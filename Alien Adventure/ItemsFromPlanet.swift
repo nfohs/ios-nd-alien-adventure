@@ -16,6 +16,7 @@ extension Hero {
         if inventory.count != 0 {
             //Evaluate each item in inventory for all the items from a specific planet
             for item in inventory {
+                //Check the Planet of Origin name against that of whatever 'planet' value is specified, append to array
                 if let originPlanet = item.historicalData["PlanetOfOrigin"], originPlanet as? String == planet {
                     print("Handing Over \(item.name) That's definitely from \(originPlanet)")
                     planetItemsNeeded.append(item)
