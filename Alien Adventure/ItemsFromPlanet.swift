@@ -20,7 +20,7 @@ extension Hero {
                 if let originPlanet = item.historicalData["PlanetOfOrigin"], originPlanet as? String == planet {
                     print("Handing Over \(item.name) That's definitely from \(originPlanet)")
                     planetItemsNeeded.append(item)
-                    print("we've handed over \(planetItemsNeeded.count)")
+                    print("we're handing over \(planetItemsNeeded.count) items")
                 } else {
                     print("\(item.name) is not from Glinda")
                 }
