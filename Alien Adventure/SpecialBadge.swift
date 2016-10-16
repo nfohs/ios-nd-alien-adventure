@@ -10,4 +10,13 @@ import SpriteKit
 
 class SpecialBadge: Badge {
 
+    override init(requestType: UDRequestType) {
+        super.init(requestType: requestType)
+        self.texture = SKTexture.init(image: #imageLiteral(resourceName: "BadgeTeal"))
+    }
+   
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+   
 }
