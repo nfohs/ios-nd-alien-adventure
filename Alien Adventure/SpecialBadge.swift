@@ -15,6 +15,10 @@ class SpecialBadge: Badge {
         self.texture = SKTexture.init(image: #imageLiteral(resourceName: "BadgeTeal"))
     }
    
+    enum BadgeAnimation: Int {
+        case growAndShrink = 0, rotate, shake
+    }
+    
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
